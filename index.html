@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<!--
+This page makes a Mad Lib story. For an example of a similar page, go here:
+
+http://www.redkid.net/madlibs/
+-->
+
+<html>
+<head>
+<title>My MadLib</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Anton|Playfair+Display|Yatra+One" rel="stylesheet">
+<body>
+
+<h1>My MadLib</h1>
+
+<div class="data">
+
+    <p class="instructions">
+      Enter a value into each field. Then click 'Make Story' to read a funny story.
+    </p>
+
+    <form>
+    Ajective 1<input type="text" id='adjective1'> <br>
+    Ajective 2<input type="text" id='adjective2'> <br>
+    Ajective 3<input type="text" id='adjective3'> <br>
+    Ajective 4<input type="text" id='adjective4'> <br>
+    Noun 1<input type="text" id='noun1'> <br>
+    Noun 2<input type="text" id='noun2'> <br>
+    Noun 3<input type="text" id='noun3'> <br>
+    Noun 4<input type="text" id='noun4'> <br>
+    Noun 5<input type="text" id='noun5'> <br>
+    Noun 6<input type="text" id='noun6'> <br>
+    Number<input type="number" id='number'> <br>
+    Plural Noun 1<input type="text" id='plural1'> <br>
+    Plural Noun 2<input type="text" id='plural2'> <br>
+    Plural Noun 3<input type="text" id='plural3'> <br>
+    Plural Noun 4<input type="text" id='plural4'> <br>
+    Type of Liquid<input type="text" id='liquid'> <br>
+
+
+  <input type="button" onclick="makeStory()" value="Make Story">
+
+    </form>
+
+</div>
+
+<div class="story">
+    <h2 id="title"></h2>
+    <img id="img" src="fire-truck.jpg">
+    <p id="paragraph1"></p>
+    <p id="paragraph2"></p>
+
+</div>
+
+<script src="story_maker.js"></script>
+</html>
